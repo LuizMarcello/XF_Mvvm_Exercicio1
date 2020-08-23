@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_Mvvm_Exercicio1.Views.AlunosPage">
+
+    <ListView ItemsSource="{Binding ListaAlunos}" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Nome}" TextColor="Black" FontSize="Medium" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding Nota}" TextColor="Black" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
+                        
